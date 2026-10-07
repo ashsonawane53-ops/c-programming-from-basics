@@ -1,14 +1,17 @@
-/* 3.0+1 will be :
-a. integer
-b. floating point number 
-c. character
-*/
+// write a program to determine whether a character entered by the user is lowercase or not 
 
 #include <stdio.h>
+
 int main(){
-    float a = 3.0+1;
-    printf("the value is %f", a);
+    char ch ;
+    printf("enter a character :");
+    scanf("%c",&ch);
+    if(ch >= 97 && ch <= 122)
+    {
+        printf("the character is lowercase");
+    }
+    else{
+        printf("the character is uppercase");
+    }
     return 0;
 }
-// option b is correct
-
