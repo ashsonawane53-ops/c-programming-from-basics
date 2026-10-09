@@ -1,23 +1,15 @@
-//what will be the output of the following program
-//int a = 10;
- //   if (a = 11)
- //       ptintf("i am 11");
- //   else
- //       printf(" am not 11");
-
-
+//write a program to print multiplication table 
+//of a given number n
 
 #include <stdio.h>
 
 int main(){
-    int a = 10;
-    if (a = 11)
+    int n,i;
+    printf("enter the value of n :");
+    scanf("%d",&n);
+    for(i=1; i<=10; i++)
     {
-        printf("i am 11");
-    }
-    else
-    {
-        printf(" am not 11");
+    printf("%d * %d = %d\n",n,i,n*i);
     }
     return 0;
 }
