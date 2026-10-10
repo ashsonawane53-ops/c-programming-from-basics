@@ -1,17 +1,11 @@
-// write a program to determine whether a character entered by the user is lowercase or not 
-
 #include <stdio.h>
 
 int main(){
-    char ch ;
-    printf("enter a character :");
-    scanf("%c",&ch);
-    if(ch >= 97 && ch <= 122)
-    {
-        printf("the character is lowercase");
-    }
-    else{
-        printf("the character is uppercase");
-    }
+    int i=1,sum=0;
+    do{
+        sum += i;
+        i++;
+    }while(i<=10);
+    printf("the sum of first 10 natural numbers is %d\n", sum);
     return 0;
 }

@@ -1,19 +1,10 @@
-//write a program to find whether a year
-//entered by te user is leap year or not
-
 #include <stdio.h>
 
 int main(){
-    int year;
-    printf("enter a year :");
-    scanf("%d",&year);
-    if (year%4==0)
-    {
-        printf("your entered year is a leaf year");
+    int i=1,sum=0;
+    for(i=1;i<=10;i++){
+        sum += i;
     }
-    else
-    {
-        printf("your entered year is not a leaf year");
-    }
+    printf("the sum of first 10 natural numbers is %d\n", sum);
     return 0;
 }
