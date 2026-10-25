@@ -1,19 +1,28 @@
 #include <stdio.h>
+#include <ctype.h>
 
-int main(){
-    int n = 5;
-    int prime = 0;
-    printf("Enter a number: ");
-    scanf("%d",&n);
-    for(int i=1; i<n; i++){
-        if(n%i==0){
-            prime++;
+int countVowels(char s[]) {
+    int count = 0;
+
+    for (int i = 0; s[i] != '\0'; i++) {
+        char ch = tolower((unsigned char)s[i]);
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' ||
+            ch == 'o' || ch == 'u') {
+            count++;
         }
     }
-    if(prime==0){
-        printf("The number is a prime number.\n");
-    }else{
-        printf("The number is not a prime number.\n");
-    }
+
+    return count;
+}
+
+int main() {
+    char s[100];
+
+    printf("Enter a word: ");
+    scanf("%99s", s);
+
+    printf("Vowels = %d\n", countVowels(s));
+
     return 0;
 }
